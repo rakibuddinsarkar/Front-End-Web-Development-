@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+  <title>RUS Academy</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div
+      class=" fixed flex bg-white justify-between items-center w-full shadow-sm sm:shadow-md px-4 py-2 sm:px-6 md:px-32 z-50">
+
+      <a href="#" id="logo" class="flex items-center gap-2">
+        <img src="Image/logo.png" alt="logo" class="max-h-[50px] max-w-[50px]">
+        <span class="text-lg  font-bold text-gray-800">RUS Academy</span>
+      </a>
+      <div id="nam-menu" class="hidden sm:flex gap-6">
+        <a href="#" class="text-gray-800 font-semibold hover:text-gray-700 cursor-pointer">Home</a>
+        <a href="#" class="text-gray-800 font-semibold hover:text-gray-700 cursor-pointer">About</a>
+        <a href="#" class="text-gray-800 font-semibold hover:text-gray-700 cursor-pointer">Services</a>
+        <a href="#" class="text-gray-800 font-semibold hover:text-gray-700 cursor-pointer">Contact</a>
+      </div>
+      <button
+        class="hidden sm:block bg-black text-white sm:ml-16 px-4 py-1 text-sm font-semibold cursor-pointer rounded-lg hover:bg-gray-700 transition duration-300">Sign
+        Up</button>
+      <button class="sm:hidden text-gray-800" id="mobile-menu-on" onclick="toggleMobileMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div id="mobile-menu" class=" bg-white inset-0 fixed z-10 p-4 hidden">
+        <div id="nav-bar" class="flex justify-between ">
+          <a href="#" id="brand" class="flex items-center gap-2">
+            <img src="Image/logo.png" alt="" class="max-h-[30px] max-w-[30px]">
+            <span class="text-lg font-bold text-gray-800">RUS Academy</span>
+          </a>
+          <button class="sm:hidden text-gray-800" id="mobile-menu-close" onclick="toggleMobileMenu()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="mt-8 flex flex-col gap-4 ">
+          <a href="#"
+            class="block hover:px-4 py-1 text-lg rounded-lg font-semibold hover:bg-gray-100 cursor-pointer">Home</a>
+          <a href="#"
+            class="block hover:px-4 py-1 text-lg rounded-lg font-semibold hover:bg-gray-100 cursor-pointer">About</a>
+          <a href="#"
+            class="block hover:px-4 py-1 text-lg rounded-lg font-semibold hover:bg-gray-100 cursor-pointer">Services</a>
+          <a href="#"
+            class="block hover:px-4 py-1 text-lg rounded-lg font-semibold hover:bg-gray-100 cursor-pointer">Contact</a>
+
+          <button
+            class=" bg-black text-white px-4 py-2 text-lg font-semibold cursor-pointer rounded-lg hover:bg-gray-700 transition duration-300 mt-4">Sign
+            Up</button>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <main>
+    <section id="hero" class="# bg-white">
+      <div class="px-4 sm:px-6 md:px-32  py-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-20 items-center justify-center mx-auto">
+          <div>
+
+            <h1 class="text-5xl sm:text-6xl font-bold sm:font-extrabold pt-8 pb-10 sm:pb-10 leading-16">
+              Build Something Amazing
+            </h1>
+            <p class="text-md sm:text-lg pb-10 ">
+              Create stunning digital experiences with our modern design solutions. Transform your ideas into reality
+              with
+              cutting-edge technology and innovative approaches.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <button
+                class="group bg-gray-900 text-white px-4 py-2 text-sm font-semibold cursor-pointer rounded-lg hover:bg-gray-700 transition duration-300">
+                Get Started <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2"></i>
+              </button>
+              <button
+                class="px-4 py-2 text-sm font-semibold rounded-lg cursor-pointer border border-gray-300 hover:bg-gray-900 hover:text-white transition duration-300">
+                ▷ <span class="ml-2">Watch Demo</span>
+              </button>
+            </div>
+            <div class="flex gap-8 mt-12 justify-center items-center sm:justify-start">
+              <div class="flex flex-col gap-1 items-center sm:items-start">
+                <p class="font-extrabold text-xl text-gray-900">10k+</p>
+                <p class="text-sm text-gray-700">Happy Customers</p>
+              </div>
+              <div class="flex flex-col gap-1 items-center sm:items-start">
+                <p class="font-extrabold text-xl text-gray-900">99%</p>
+                <p class="text-sm text-gray-700">Satisfaction Rate</p>
+              </div>
+              <div class="flex flex-col gap-1 items-center sm:items-start">
+                <p class="font-extrabold text-xl text-gray-900">24/7</p>
+                <p class="text-sm text-gray-700">Support</p>
+              </div>
+            </div>
+          </div>
+          <div class="hidden sm:block justify-center items-center sm:mt-24">
+            <img class="rounded-2xl object-cover mb-10 "
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png"
+              alt="image description">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="About" class=" bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div>
+          <h1 class="text-2xl font-bold sm:text-4xl text-center  text-gray-900">About Us</h1>
+          <p class="p-4 text-center mx-auto max-w-3xl text-sm sm:text-lg pb-10 text-gray-700">We are a team of
+            passionate
+            designers and
+            developers
+            dedicated to creating exceptional digital experiences
+            that drive
+            results.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2  items-center justify-center mx-auto p-4 sm:px-6 md:px-12 ">
+
+          <div class="">
+            <h2 class="text-md sm:text-2xl font-bold mb-4">Our Mission</h2>
+            <p class="text-sm sm:text-md leading-16 text-gray-700 tracking-wider pb-2">To empower businesses with
+              cutting-edge digital solutions that
+              Transform ideas into reality. We believe in the power of design and enhance user experiences and drive
+              growth.</p>
+            <ul class="p-4 text-sm sm:text-md flex flex-col gap-1 text-gray-700">
+              <li class="list-disc tracking-wider">Interaction Design approaches</li>
+              <li class="list-disc tracking-wider">Clint focused solutions</li>
+              <li class="list-disc tracking-wider">Quality Customers</li>
+            </ul>
+          </div>
+          <div class="flex justify-center items-center mb-4 gap-16">
+            <div>
+              <div class="flex flex-col gap-1 hover:bg-gray-200 p-6">
+                <h2 class="font-bold text-xl sm:text-2xl sm:font-extrabold text-gray-900">5+</h2>
+                <p class="text-sm sm:text-md text-gray-700">Years of experience</p>
+              </div>
+              <div class="flex flex-col gap-1 hover:bg-gray-200 p-6">
+                <h2 class="font-bold text-xl sm:text-2xl sm:font-extrabold text-gray-900">50+</h2>
+                <p class="text-sm sm:text-md text-gray-700">Happy Clients</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col gap-1 hover:bg-gray-200 p-6">
+                <h2 class="font-bold text-xl sm:text-2xl sm:font-extrabold text-gray-900">200+</h2>
+                <p class="text-sm sm:text-md text-gray-700">Projects Completed</p>
+              </div>
+              <div class="flex flex-col gap-1 hover:bg-gray-200 p-6">
+                <h2 class="font-bold text-xl sm:text-2xl sm:font-extrabold text-gray-900">15+</h2>
+                <p class="text-sm sm:text-md text-gray-700">Team Members</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Get In Touch -->
+    <section id="Contact" class="# bg-white ">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="">
+          <h1 class="text-2xl font-bold sm:text-4xl text-center  text-gray-900">Get In Touch</h1>
+          <p class="p-4 text-center mx-auto max-w-3xl text-sm sm:text-lg pb-10  text-gray-700">Ready to start your next
+            project? We'd love to hear from you. Send us a message and we'll
+            respond as soon as possible.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:gap-20 sm:grid-cols-2 mx-auto p-4 sm:px-6 md:px-12 ">
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-4 ">
+              <i
+                class="fa-solid fa-envelope text-md text-gray-900 w-10 h-10 bg-gray-100 rounded-md flex justify-center items-center"></i>
+              <address>
+                <p class="text-sm font-bold ">Email</p>
+                <a class="text-sm text-gray-700" href="mailto:mail@rus.academy">mail@rus.academy.com</a>
+              </address>
+            </div>
+            <div class="flex items-center gap-4">
+              <i
+                class="fa-solid fa-phone text-md text-gray-900 w-10 h-10 bg-gray-100 rounded-md flex justify-center items-center"></i>
+              <address>
+                <p class="text-sm font-bold ">Phone</p>
+                <a class="text-sm text-gray-700" href="phone:+880123456789">+88 0123456789</a>
+              </address>
+            </div>
+            <div class="flex items-center gap-4">
+              <i
+                class="fa-solid fa-location-dot text-md text-gray-900 w-10 h-10 bg-gray-100 rounded-md flex justify-center items-center"></i>
+              <address>
+                <p class="text-sm font-bold ">Address</p>
+                <a class="text-sm text-gray-700" href="address:123MainStreet,NewYork,NY10001">123 Main Street, New
+                  York, NY 10001</a>
+              </address>
+            </div>
+          </div>
+          <div>
+            <form action="../backEnd.php">
+              <div class="grid grid-cols-2 gap-2 mt-8 sm:mt-0">
+                <div>
+
+                  <label for="first-name" class="text-sm font-bold text-gray-700">First Name</label><br>
+                  <input type="text" id="first-name" name="first-name" placeholder="John"
+                    class="border border-gray-300 mt-2 mb-4 px-2 py-1 rounded-md w-full ">
+                </div>
+                <div>
+                  <label for="last-name" class="text-sm font-bold text-gray-700">Last Name</label><br>
+                  <input type="text" id="last-name" name="last-name" placeholder="Doe"
+                    class="border border-gray-300 mt-2 mb-4 px-2 py-1 rounded-md w-full">
+                </div>
+
+              </div>
+              <div>
+                <label for="email" class="text-sm font-bold  text-gray-700">Email</label><br>
+                <input type="text" id="email" name="email" placeholder="mail@rus.academy.com"
+                  class="border border-gray-300 px-2 py-1 mt-2 mb-4 rounded-md  w-full ">
+
+                <label for="message" class="text-sm font-bold text-gray-700">Massages</label><br>
+                <textarea id="message" name="message" placeholder="Tell us about your project..."
+                  class="border border-gray-200 px-2 py-1 mt-2 mb-4 rounded-md  w-full h-28 ">
+                    </textarea>
+              </div>
+              <div class="flex justify-end">
+                <button
+                  class="group bg-gray-900 text-white px-4 text-sm  w-full rounded-md py-2 hover:bg-gray-700 transition duration-300">Send
+                  Massage<i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1"></i> </button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- footer section  -->
+    <footer>
+      <div class="bg-gray-100 px-4 sm:px-6 md:px-32 py-16">
+        <div class="flex flex-col sm:flex-row sm:justify-between gap-4">
+          <div>
+            <div class="flex flex-col gap-2">
+              <a href="#" id="#logo" class="flex items-center gap-2">
+                <img src="Image/logo.png" alt="logo" class="max-h-[40px] max-w-[40px]">
+                <span class="text-lg font-bold text-gray-800">RUS Academy</span>
+              </a>
+              <p class="text-sm text-gray-700">creating exceptional digital experiences that drive results</p>
+            </div>
+            <div class="flex gap-2 mt-4 items-center">
+              <a class="h-6 w-6 bg-gray-700 rounded-full flex justify-center items-center " href="#"><i
+                  class="text-white fa-brands fa-github"></i></a>
+              <a class="h-6 w-6 bg-gray-700 rounded-full flex justify-center items-center " href="#"><i
+                  class="text-white fa-brands fa-facebook"></i></a>
+              <a class="h-6 w-6 bg-gray-700 rounded-full flex justify-center items-center " href="#"><i
+                  class="text-white fa-brands fa-twitter"></i></a>
+              <a class="h-6 w-6 bg-gray-700 rounded-full flex justify-center items-center " href="#"><i
+                  class="text-white fa-brands fa-square-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-16 sm:gap-32">
+
+
+            <div>
+              <h3 class="text-xl font-bold">Quick Links</h3>
+              <div class="flex flex-col gap-2 mt-4">
+                <a href="#" class="text-sm text-gray-700 font-semibold hover:text-gray-900">Home</a>
+                <a href="#" class="text-sm text-gray-700 font-semibold hover:text-gray-900">About</a>
+                <a href="#" class="text-sm text-gray-700 font-semibold hover:text-gray-900">Services</a>
+                <a href="#" class="text-sm text-gray-700 font-semibold hover:text-gray-900">Contact</a>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold">Services</h3>
+              <div class="flex flex-col gap-2 mt-4">
+                <a href="#" class="text-sm text-gray-700 font-semibold hover:text-gray-900">Web Development</a>
+                <a href="#" class="text-sm text-gray-700 font-semibold hover:text-gray-900">Mobile App Development</a>
+                <a href="#" class="text-sm text-gray-700 font-semibold hover:text-gray-900">UI/UX Design</a>
+                <a href="#" class="text-sm text-gray-700 font-semibold hover:text-gray-900">Digital Marketing</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center my-8 border border-gray-200"></div>
+        <div
+          class="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500 space-y-4 sm:space-y-0 dark:text-gray-400">
+          <p>&copy; 2025 RUS Academy. All rights reserved</p>
+          <div class="flex gap-4">
+            <p>Terms of Service </p>
+            <p> Privacy Policy</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
