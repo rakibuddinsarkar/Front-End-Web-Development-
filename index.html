@@ -13,8 +13,7 @@
 <body>
   <!-- Navbar -->
   <nav>
-    <div
-      class=" fixed flex bg-white justify-between items-center w-full shadow-sm sm:shadow-md px-4 py-2 sm:px-6 md:px-32 z-50">
+    <div class=" fixed flex bg-white justify-between items-center w-full shadow-sm sm:shadow-md py-2 px-4 sm:px-24">
 
       <a href="#" id="logo" class="flex items-center gap-2">
         <img src="Image/logo.png" alt="logo" class="max-h-[50px] max-w-[50px]">
@@ -60,19 +59,21 @@
         </div>
       </div>
     </div>
+
   </nav>
+
 
   <!-- Hero Section -->
   <main>
     <section id="hero" class="# bg-white">
-      <div class="px-4 sm:px-6 md:px-32  py-16">
-        <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-20 items-center justify-center mx-auto">
+      <div class="max-w-7xl mx-auto px-4 sm:px-12 py-24 pt-32">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 items-center justify-center">
           <div>
 
-            <h1 class="text-5xl sm:text-6xl font-bold sm:font-extrabold pt-8 pb-10 sm:pb-10 leading-16">
+            <h1 class="text-5xl sm:text-6xl font-bold sm:font-extrabold pb-12">
               Build Something Amazing
             </h1>
-            <p class="text-md sm:text-lg pb-10 ">
+            <p class="text-md sm:text-lg pb-12 ">
               Create stunning digital experiences with our modern design solutions. Transform your ideas into reality
               with
               cutting-edge technology and innovative approaches.
@@ -80,42 +81,41 @@
             <div class="flex flex-col sm:flex-row gap-4">
               <button
                 class="group bg-gray-900 text-white px-4 py-2 text-sm font-semibold cursor-pointer rounded-lg hover:bg-gray-700 transition duration-300">
-                Get Started <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2"></i>
+                Get Started <i class="fa-solid fa-arrow-right ml-2  group-hover:translate-x-2"></i>
               </button>
               <button
                 class="px-4 py-2 text-sm font-semibold rounded-lg cursor-pointer border border-gray-300 hover:bg-gray-900 hover:text-white transition duration-300">
                 ▷ <span class="ml-2">Watch Demo</span>
               </button>
             </div>
-            <div class="flex gap-8 mt-12 justify-center items-center sm:justify-start">
-              <div class="flex flex-col gap-1 items-center sm:items-start">
-                <p class="font-extrabold text-xl text-gray-900">10k+</p>
+            <div class="flex gap-8 mt-12 justify-center sm:justify-start">
+              <div class="flex flex-col gap-1  ">
+                <p class="font-extrabold text-xl sm:text-2xl text-gray-900">10k+</p>
                 <p class="text-sm text-gray-700">Happy Customers</p>
               </div>
-              <div class="flex flex-col gap-1 items-center sm:items-start">
-                <p class="font-extrabold text-xl text-gray-900">99%</p>
+              <div class="flex flex-col gap-1 ">
+                <p class="font-extrabold text-xl sm:text-2xl text-gray-900">99%</p>
                 <p class="text-sm text-gray-700">Satisfaction Rate</p>
               </div>
-              <div class="flex flex-col gap-1 items-center sm:items-start">
-                <p class="font-extrabold text-xl text-gray-900">24/7</p>
+              <div class="flex flex-col gap-1 ">
+                <p class="font-extrabold text-xl sm:text-2xl text-gray-900">24/7</p>
                 <p class="text-sm text-gray-700">Support</p>
               </div>
             </div>
           </div>
-          <div class="hidden sm:block justify-center items-center sm:mt-24">
-            <img class="rounded-2xl object-cover mb-10 "
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png"
+          <div class="flex sm:justify-end justify-center">
+            <img class="rounded-2xl object-cover sm:w-[500px] sm:h-[450px] " src="Image/hero.avif"
               alt="image description">
           </div>
         </div>
       </div>
     </section>
     <!-- About Section -->
-    <section id="About" class=" bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <section id="About" class=" bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-12 py-16">
         <div>
-          <h1 class="text-2xl font-bold sm:text-4xl text-center  text-gray-900">About Us</h1>
-          <p class="p-4 text-center mx-auto max-w-3xl text-sm sm:text-lg pb-10 text-gray-700">We are a team of
+          <h1 class="text-2xl font-extrabold sm:text-4xl text-center text-gray-900 pb-4">About Us</h1>
+          <p class="text-center mx-auto max-w-3xl text-sm sm:text-lg pb-8 sm:pb-12  text-gray-600">We are a team of
             passionate
             designers and
             developers
@@ -123,55 +123,58 @@
             that drive
             results.</p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2  items-center justify-center mx-auto p-4 sm:px-6 md:px-12 ">
+        <h2 class="text-md sm:text-2xl font-bold pb-2 sm:pb-4">Our Mission</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-48 items-center justify-center mx-auto ">
 
           <div class="">
-            <h2 class="text-md sm:text-2xl font-bold mb-4">Our Mission</h2>
-            <p class="text-sm sm:text-md leading-16 text-gray-700 tracking-wider pb-2">To empower businesses with
+            <p class="text-sm sm:text-md text-gray-500 hover:text-gray-700 tracking-wider ">To empower businesses with
               cutting-edge digital solutions that
               Transform ideas into reality. We believe in the power of design and enhance user experiences and drive
               growth.</p>
-            <ul class="p-4 text-sm sm:text-md flex flex-col gap-1 text-gray-700">
-              <li class="list-disc tracking-wider">Interaction Design approaches</li>
-              <li class="list-disc tracking-wider">Clint focused solutions</li>
-              <li class="list-disc tracking-wider">Quality Customers</li>
+            <ul class="p-4 text-sm sm:text-md flex flex-col gap-1 ">
+              <li class="list-disc tracking-wider text-gray-500 hover:text-gray-700">Interaction Design approaches</li>
+              <li class="list-disc tracking-wider text-gray-500 hover:text-gray-700">Clint focused solutions</li>
+              <li class="list-disc tracking-wider text-gray-500 hover:text-gray-700">Quality Customers</li>
             </ul>
           </div>
-          <div class="flex justify-center items-center mb-4 gap-16">
-            <div>
-              <div class="flex flex-col gap-1 hover:bg-gray-200 p-6">
-                <h2 class="font-bold text-xl sm:text-2xl sm:font-extrabold text-gray-900">5+</h2>
-                <p class="text-sm sm:text-md text-gray-700">Years of experience</p>
-              </div>
-              <div class="flex flex-col gap-1 hover:bg-gray-200 p-6">
-                <h2 class="font-bold text-xl sm:text-2xl sm:font-extrabold text-gray-900">50+</h2>
-                <p class="text-sm sm:text-md text-gray-700">Happy Clients</p>
-              </div>
+          <div class="grid grid-cols-2 items-center gap-16">
+
+            <div class="flex flex-col gap-1 hover:bg-gray-200 items-center sm:items-start
+             ">
+              <h2 class="font-extrabold text-xl sm:text-2xl text-gray-900">5+</h2>
+              <p class="text-sm sm:text-md text-gray-700">Years of experience</p>
             </div>
-            <div>
-              <div class="flex flex-col gap-1 hover:bg-gray-200 p-6">
-                <h2 class="font-bold text-xl sm:text-2xl sm:font-extrabold text-gray-900">200+</h2>
-                <p class="text-sm sm:text-md text-gray-700">Projects Completed</p>
-              </div>
-              <div class="flex flex-col gap-1 hover:bg-gray-200 p-6">
-                <h2 class="font-bold text-xl sm:text-2xl sm:font-extrabold text-gray-900">15+</h2>
-                <p class="text-sm sm:text-md text-gray-700">Team Members</p>
-              </div>
+            <div class="flex flex-col gap-1 hover:bg-gray-200 items-center sm:items-start
+             ">
+              <h2 class="font-extrabold text-xl sm:text-2xl text-gray-900">50+</h2>
+              <p class="text-sm sm:text-md text-gray-700">Happy Clients</p>
             </div>
+            <div class="flex flex-col gap-1 hover:bg-gray-200 items-center sm:items-start
+             ">
+              <h2 class="font-extrabold text-xl sm:text-2xl text-gray-900">200+</h2>
+              <p class="text-sm sm:text-md text-gray-700">Projects Completed</p>
+            </div>
+            <div class="flex flex-col gap-1 hover:bg-gray-200 items-center sm:items-start
+             ">
+              <h2 class="font-extrabold text-xl sm:text-2xl text-gray-900">15+</h2>
+              <p class="text-sm sm:text-md text-gray-700">Team Members</p>
+            </div>
+
           </div>
         </div>
       </div>
     </section>
     <!-- Get In Touch -->
     <section id="Contact" class="# bg-white ">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-12 py-16">
         <div class="">
-          <h1 class="text-2xl font-bold sm:text-4xl text-center  text-gray-900">Get In Touch</h1>
-          <p class="p-4 text-center mx-auto max-w-3xl text-sm sm:text-lg pb-10  text-gray-700">Ready to start your next
+          <h1 class="text-2xl font-extrabold sm:text-4xl text-center text-gray-900 pb-4">Get In Touch</h1>
+          <p class="text-center mx-auto max-w-3xl text-sm sm:text-lg pb-8 sm:pb-12  text-gray-600">Ready to start your
+            next
             project? We'd love to hear from you. Send us a message and we'll
             respond as soon as possible.</p>
         </div>
-        <div class="grid grid-cols-1 sm:gap-20 sm:grid-cols-2 mx-auto p-4 sm:px-6 md:px-12 ">
+        <div class="grid grid-cols-1 sm:gap-20 sm:grid-cols-2">
           <div class="flex flex-col gap-4">
             <div class="flex items-center gap-4 ">
               <i
@@ -239,60 +242,64 @@
     </section>
     <!-- footer section  -->
     <footer>
-      <div class="bg-gray-100 px-4 sm:px-6 md:px-32 py-16">
-        <div class="flex flex-col sm:flex-row sm:justify-between gap-4">
-          <div>
-            <div class="flex flex-col gap-2">
-              <a href="#" id="#logo" class="flex items-center gap-2">
-                <img src="Image/logo.png" alt="logo" class="max-h-[40px] max-w-[40px]">
-                <span class="text-lg font-bold text-gray-800">RUS Academy</span>
-              </a>
-              <p class="text-sm text-gray-700">creating exceptional digital experiences that drive results</p>
-            </div>
-            <div class="flex gap-2 mt-4 items-center">
-              <a class="h-6 w-6 bg-gray-700 rounded-full flex justify-center items-center " href="#"><i
-                  class="text-white fa-brands fa-github"></i></a>
-              <a class="h-6 w-6 bg-gray-700 rounded-full flex justify-center items-center " href="#"><i
-                  class="text-white fa-brands fa-facebook"></i></a>
-              <a class="h-6 w-6 bg-gray-700 rounded-full flex justify-center items-center " href="#"><i
-                  class="text-white fa-brands fa-twitter"></i></a>
-              <a class="h-6 w-6 bg-gray-700 rounded-full flex justify-center items-center " href="#"><i
-                  class="text-white fa-brands fa-square-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="grid grid-cols-2 gap-16 sm:gap-32">
-
-
+      <div class="bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-12 pt-16">
+          <div class="flex flex-col sm:flex-row sm:justify-between gap-8">
             <div>
-              <h3 class="text-xl font-bold">Quick Links</h3>
-              <div class="flex flex-col gap-2 mt-4">
-                <a href="#" class="text-sm text-gray-700 font-semibold hover:text-gray-900">Home</a>
-                <a href="#" class="text-sm text-gray-700 font-semibold hover:text-gray-900">About</a>
-                <a href="#" class="text-sm text-gray-700 font-semibold hover:text-gray-900">Services</a>
-                <a href="#" class="text-sm text-gray-700 font-semibold hover:text-gray-900">Contact</a>
+              <div class="flex flex-col gap-4">
+                <a href="#" id="#logo" class="flex items-center gap-2">
+                  <img src="Image/logo.png" alt="logo" class="max-h-[40px] max-w-[40px]">
+                  <span class="text-lg font-bold text-gray-800">RUS Academy</span>
+                </a>
+                <p class="text-sm text-gray-500 hover:text-gray-700 tracking-wider">creating exceptional digital
+                  experiences that drive results</p>
+              </div>
+              <div class="flex gap-2 mt-6 items-center">
+                <a class="h-6 w-6 bg-gray-700 rounded-full flex justify-center items-center " href="#"><i
+                    class="text-white fa-brands fa-github"></i></a>
+                <a class="h-6 w-6 bg-gray-700 rounded-full flex justify-center items-center " href="#"><i
+                    class="text-white fa-brands fa-facebook"></i></a>
+                <a class="h-6 w-6 bg-gray-700 rounded-full flex justify-center items-center " href="#"><i
+                    class="text-white fa-brands fa-twitter"></i></a>
+                <a class="h-6 w-6 bg-gray-700 rounded-full flex justify-center items-center " href="#"><i
+                    class="text-white fa-brands fa-square-linkedin"></i></a>
               </div>
             </div>
-            <div>
-              <h3 class="text-xl font-bold">Services</h3>
-              <div class="flex flex-col gap-2 mt-4">
-                <a href="#" class="text-sm text-gray-700 font-semibold hover:text-gray-900">Web Development</a>
-                <a href="#" class="text-sm text-gray-700 font-semibold hover:text-gray-900">Mobile App Development</a>
-                <a href="#" class="text-sm text-gray-700 font-semibold hover:text-gray-900">UI/UX Design</a>
-                <a href="#" class="text-sm text-gray-700 font-semibold hover:text-gray-900">Digital Marketing</a>
+            <div class="grid grid-cols-2 gap-16 sm:gap-32">
+
+
+              <div>
+                <h3 class="text-xl font-bold">Quick Links</h3>
+                <div class="flex flex-col gap-2 mt-4">
+                  <a href="#" class="text-sm text-gray-600 font-semibold hover:text-gray-900">Home</a>
+                  <a href="#" class="text-sm text-gray-600 font-semibold hover:text-gray-900">About</a>
+                  <a href="#" class="text-sm text-gray-600 font-semibold hover:text-gray-900">Services</a>
+                  <a href="#" class="text-sm text-gray-600 font-semibold hover:text-gray-900">Contact</a>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold">Services</h3>
+                <div class="flex flex-col gap-2 mt-4">
+                  <a href="#" class="text-sm text-gray-600 font-semibold hover:text-gray-900">Web Development</a>
+                  <a href="#" class="text-sm text-gray-600 font-semibold hover:text-gray-900">Mobile App Development</a>
+                  <a href="#" class="text-sm text-gray-600 font-semibold hover:text-gray-900">UI/UX Design</a>
+                  <a href="#" class="text-sm text-gray-600 font-semibold hover:text-gray-900">Digital Marketing</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="flex justify-center my-8 border border-gray-200"></div>
-        <div
-          class="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500 space-y-4 sm:space-y-0 dark:text-gray-400">
-          <p>&copy; 2025 RUS Academy. All rights reserved</p>
-          <div class="flex gap-4">
-            <p>Terms of Service </p>
-            <p> Privacy Policy</p>
+          <div class="flex justify-center mt-8 border border-gray-200 shadow-md"></div>
+          <div
+            class="flex flex-col sm:flex-row justify-between items-center text-sm  p-4 text-gray-500 space-y-4 sm:space-y-0 dark:text-gray-400">
+            <p>&copy; 2025 RUS Academy. All rights reserved</p>
+            <div class="flex gap-4">
+              <p>Terms of Service </p>
+              <p> Privacy Policy</p>
+            </div>
           </div>
         </div>
       </div>
+
     </footer>
   </main>
   <script src="script.js"></script>
